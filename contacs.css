@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ee0808;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar .logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.navbar .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar .nav-links li a {
+    color: #fff;
+    font-weight: bold;
+}
+.navbar .nav-links li a.active {
+    text-decoration: underline;
+}
+
+.contact-hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f00b0b;
+}
+.contact-hero h1 {font-size: 36px; margin-bottom: 20px; color: #fff;}
+.contact-hero p {font-size: 18px; color: #fff;}
+
+.contact-form-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form label {
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+.contact-form button {
+    padding: 12px;
+    border: none;
+    background-color: #e80f0f;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.contact-form button:hover {
+    background-color: #ea0f0f;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d20d0d;
+    color: #fff;
+}
+
+@media(max-width:768px){
+    .navbar {flex-direction: column; gap: 10px;}
+    .contact-hero h1 {font-size: 28px;}
+    .contact-hero p {font-size: 16px;}
+}
